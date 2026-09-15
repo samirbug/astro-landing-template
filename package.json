@@ -1,0 +1,28 @@
+{
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "astro build",
+    "check": "astro check",
+    "dev": "astro dev --host",
+    "preview": "pnpm run build && wrangler dev",
+    "generate-types": "wrangler types",
+    "preview:pages": "wrangler pages dev dist --ip 0.0.0.0",
+    "deploy": "pnpm run build && wrangler deploy"
+  },
+  "dependencies": {
+    "astro": "^7.3.2",
+    "react": "^19.3.0",
+    "tailwindcss": "^4.3.3"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.10",
+    "@astrojs/react": "^6.0.5",
+    "@biomejs/biome": "^2.5.13",
+    "@tailwindcss/vite": "^4.3.3",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "typescript": "^7.0.2"
+  }
+}
