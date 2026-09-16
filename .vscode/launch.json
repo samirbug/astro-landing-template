@@ -1,15 +1,15 @@
 {
   "configurations": [
     {
-      "name": "Dev",
+      "name": "Astro: Dev",
+      "type": "node-terminal",
       "request": "launch",
-      "command": "pnpm dev",
-      "type": "node-terminal"
+      "command": "pnpm dev"
     },
     {
-      "name": "Preview",
-      "request": "launch",
+      "name": "Astro: Preview",
       "type": "node-terminal",
+      "request": "launch",
       "command": "pnpm preview"
     }
   ]

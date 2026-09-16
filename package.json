@@ -5,10 +5,9 @@
     "build": "astro build",
     "check": "astro check",
     "dev": "astro dev --host",
-    "preview": "pnpm run build && wrangler dev",
-    "generate-types": "wrangler types",
-    "preview:pages": "wrangler pages dev dist --ip 0.0.0.0",
-    "deploy": "pnpm run build && wrangler deploy"
+    "lint": "biome lint --write .",
+    "preview": "astro preview --host",
+    "format": "biome format --write ."
   },
   "dependencies": {
     "astro": "^7.3.2",
